@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="assignmentfive.css"/>
+    <script src="assignmentfive.js"></script>
+    
+    <title>Spivey Module Five</title>
+</head>
+
+<body>
+<h2> Spivey Module Five</h2>
+<h3>Select an Option:</h3>
+<select onchange="MenuChoice()" id="menu">
+    <option>Please Select an Option</option>
+<option>Section One: Display Customer List</option>
+<option>Section Two: Display Order History</option>
+<option>Section Three: Display List of Orders</option>
+</select>
+<br>
+<hr>
+<section></section>
+<section id="sectionone" class="sectionone">
+   <button onclick= "GetAllCustomers()" id="getallcustomers">Display Customer List</button> 
+    
+</section>
+<br>
+<section id="sectiontwo" class="sectiontwo">
+    
+    <label> Enter Customer ID:</label>
+    <input type="text" id="customerid">
+    <br>
+    <button onclick="OrderHistory()" id="orderhistory">Display Order History</button>
+</section>
+<br>
+
+<section id="sectionthree" class="sectionthree">
+ <label> Enter Customer ID:</label>
+ <input type="text" id="customeridthree">
+ <br>
+ <button onclick="GetAllOrders()" id="getordersforcustomers"> Display Orders</button>
+ </section>
+</section>
+
+<hr>
+<label id="sectiononedisplay">Display results from section one</label>
+<br>
+<label id="sectiontwodisplay">Display results from section two</label>
+<br>
+<label id="sectionthreedisplay">Display results from section three</label>
+</body>
+</html>
